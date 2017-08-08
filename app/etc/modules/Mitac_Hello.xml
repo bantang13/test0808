@@ -1,0 +1,8 @@
+<config>
+  <modules>
+    <Mitac_Hello>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Mitac_Hello>
+  </modules>
+</config>

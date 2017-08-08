@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+	<micfaq_faqs_index>
+		<!--引用css js-->
+		<reference name="head">
+			<action method="addItem"><type>skin_js</type><name>js/bootstrap.js</name></action>
+			<action method="addItem"><type>skin_css</type><name>css/bootstrap.css</name></action>
+		</reference>
+		<!--引用css js End-->
+		<reference name="root">
+			<action method="setTemplate"><template>page/1column.phtml</template></action>
+		</reference>
+		<reference name="content">
+			<block type="micfaq/faqs" name="mitc.faqs" template="mic/faq/faq.phtml"/>
+		</reference>
+	</micfaq_faqs_index>
+	
+
+
+</layout>

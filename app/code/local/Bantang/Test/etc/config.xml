@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<config>
+	<!--定義modules-->
+	<modules>
+		<Bantang_Test><!--對應實體目錄的架構 ?-->
+			<version>1.0.0</version>
+		</Bantang_Test>
+	</modules>
+	<!--定義modules end-->
+	
+	<global>
+		<!--定義block-->
+		<blocks>
+			<bantangtest><!--Bantang_Test_Block 的 nickname ?-->
+				<class>Bantang_Test_Block</class><!--對應實體目錄的架構 ?-->
+			</bantangtest>
+		</blocks>
+		<!--定義block end-->
+		
+		<!--引用helper-->
+		<helpers>
+			<bantangtest><!--block 的 nickname-->
+				<class>Bantang_Test_Helper</class><!--對應實體目錄的架構 ?-->
+			</bantangtest>
+		</helpers>
+		<!--引用helper end-->
+		
+		<!--錯誤<blocks>
+			<mitachello>
+				<class>Bantang_Test_Block</class>
+			</mitachello>
+		</blocks>-->
+		
+		
+		<!--安裝留言板-->
+		<models>
+			<mitachello>
+				<class>Bantang_Test_Model</class>
+				<resourceModel>mitachello_mysql4</resourceModel>
+			</mitachello>
+			<mitachello_mysql4>
+				<class>Bantang_Test_Model_Mysql4</class>
+				<entities>
+					<message>
+						<table>mitac_message</table>
+					</message>
+				</entities>
+			</mitachello_mysql4>
+		</models>
+		
+		<resources>
+		
+			<mitachello_setup>
+				<setup>
+					<module>Bantang_Test</module>
+					<class>Mage_Core_Model_Resource_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</mitachello_setup>
+			
+			<mitachello_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</mitachello_write>
+			
+			<mitachello_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</mitachello_read>
+			
+		</resources>
+		<!--安裝留言板 end-->
+	</global>
+	
+	<frontend>
+		<routers>
+			<btest>
+				<use>standard</use>
+				<args>
+					<module>Bantang_Test</module>
+					<frontName>btest</frontName>
+				</args>
+			</btest>
+		</routers>
+		
+		<routers>
+			<mitachello>
+				<use>standard</use>
+				<args>
+					<module>Bantang_Test</module>
+					<frontName>mitachello</frontName>
+				</args>
+			</mitachello>
+		</routers>
+		
+		<!--加入layout，引入自定義模板-->
+		<layout>
+			<updates>
+				<btest Module="Bantang_Test">
+					<file>mitac/hello.xml</file><!--xml的路徑-->
+				</btest>
+			</updates>
+		</layout>
+		
+		
+		<!--加入翻譯-->
+		<translate>
+			<modules>
+				<bantangtest>
+					<files>
+						<default>Mitac_Hello.csv</default>
+					</files>
+				</bantangtest>
+			</modules>
+		</translate>
+		
+
+		
+	</frontend>
+</config>

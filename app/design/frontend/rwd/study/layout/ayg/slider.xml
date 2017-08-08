@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <cms_index_index translate="label">
+        <reference name="content">
+            <block type="slider/slideshow" before="-" name="slideshow" template="ayg/slider/slideshow.phtml" />
+        </reference>
+		
+		<reference name="head">
+			<action method="addItem"><type>skin_js</type><name>js/slick.min.js</name></action>
+			<action method="addItem"><type>skin_css</type><name>css/slick.css</name></action>
+			<action method="addItem"><type>skin_css</type><name>css/slick-theme.css</name></action>
+		</reference>
+    </cms_index_index>
+	
+
+</layout>

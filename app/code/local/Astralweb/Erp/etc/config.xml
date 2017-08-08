@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Astralweb_Erp>
+            <version>1.0.0</version>
+        </Astralweb_Erp>
+    </modules>
+	<global>
+		<helpers>
+		   <awerp>
+				  <class>Astralweb_Erp_Helper</class>
+			</awerp>
+		</helpers>
+        <resources>
+            <awerp_setup>
+				<setup>
+					<module>Astralweb_Erp</module>
+					<class>Mage_Core_Model_Resource_Setup</class>	
+				</setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </awerp_setup>
+            <awerp_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </awerp_write>
+            <awerp_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </awerp_read>
+        </resources>
+	</global>
+</config>

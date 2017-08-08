@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mio_Erp>
+            <version>1.0.0</version>
+        </Mio_Erp>
+    </modules>
+	
+    <global>
+		<blocks>
+            <mioerp>
+                <class>Mio_Erp_Block</class>
+            </mioerp>
+        </blocks>
+
+		<models>
+			<mioerp>
+                <class>Mio_Erp_Model</class>
+				<resourceModel>mioerp_resource</resourceModel>
+            </mioerp>
+			<mioerp_resource>
+				<class>Mio_Erp_Model_Resource</class>
+			</mioerp_resource>
+		</models>
+		<resources>
+			<mioerp_setup>
+				<setup>
+					<module>Mio_Erp</module>
+					<class>Mage_Sales_Model_Mysql4_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</mioerp_setup>
+			<mioerp_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</mioerp_write>
+			<mioerp_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</mioerp_read>
+		</resources>
+    </global>
+	
+
+</config>

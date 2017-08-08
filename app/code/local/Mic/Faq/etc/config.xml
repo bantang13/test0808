@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Mic_Faq>
+			<version>1.0.0</version>
+		</Mic_Faq>
+	</modules>
+	
+	<global>
+		<helpers>
+			<micfaq>
+				<class>Mic_Faq_Helper</class>
+			</micfaq>
+		</helpers>
+		
+		<!--資料表安裝-->
+		<models>
+			<micfaq>
+				<class>Mic_Faq_Model</class>
+				<resourceModel>micfaq_resource</resourceModel>
+			</micfaq>
+			<micfaq_resource>
+				<class>Mic_Faq_Model_Resource</class>
+				<entities>
+					<faqs>
+						<table>mic_faqs</table>
+					</faqs>
+					<category>
+						<table>mic_faqs_category</table>
+					</category>
+				</entities>
+			</micfaq_resource>
+		</models>
+		<resources>
+			<micfaq_setup>
+				<setup>
+					<module>Mic_Faq</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</micfaq_setup>
+			<micfaq_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</micfaq_write>
+			<micfaq_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</micfaq_read>
+		</resources>
+		<!--資料表安裝 end-->
+		
+		<!--後台控制項佈置-->
+		<blocks>
+			<micfaq>
+				<class>Mic_Faq_Block</class>
+			</micfaq>
+		</blocks>
+		<!--後台控制項佈置 end-->
+		
+	</global>
+	
+	<frontend>
+		<routers>
+			<micfaq>
+				<use>standard</use>
+				<args>
+					<module>Mic_Faq</module>
+					<frontName>micfaq</frontName>
+				</args>
+			</micfaq>
+		</routers>
+		
+	<layout>
+		<updates>
+			<micfaq>
+				<file>mic/faq.xml</file>
+			</micfaq>
+		</updates>
+	</layout>
+	
+	</frontend>
+	
+	<admin>
+		<routers>
+			<micfaq>
+				<use>admin</use>
+				<args>
+					<module>Mic_Faq</module>
+					<frontName>micfaq</frontName>
+				</args>
+			</micfaq>
+		</routers>
+	</admin>
+	
+	<!--後台控制項佈置-->
+	<adminhtml>
+		<layout>
+			<updates>
+				<micfaq>
+					<file>mic/faq.xml</file>
+				</micfaq>
+			</updates>
+		</layout>
+	</adminhtml>
+	<!--後台控制項佈置 end-->
+
+</config>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <mio translate="label" module="awerp">
+            <label>Mio</label>
+            <sort_order>100</sort_order>
+        </mio>
+    </tabs>
+    <sections>
+        <awerp translate="label" module="awerp">
+            <label>ERP</label>
+            <tab>mio</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <setting>
+                    <label>Setting</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <review_amount>
+                            <label>Review Amount</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>38</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </review_amount>
+                    </fields>                
+                </setting>
+            </groups>
+        </awerp>
+    </sections>
+</config>
+							

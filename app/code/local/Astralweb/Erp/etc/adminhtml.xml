@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<adminhtml>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <awerp translate="title" module="awerp">
+                                        <title>ERP</title>
+                                        <sort_order>100</sort_order>
+                                    </awerp>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</adminhtml>

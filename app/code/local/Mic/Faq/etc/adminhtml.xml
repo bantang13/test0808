@@ -1,0 +1,44 @@
+<adminhtml>
+	<menu>
+		<micfaq module="micfaq">
+			<title>FAQ</title>
+			<sort_order>75</sort_order>
+			<children>
+				<micfaq_list>
+					<title>Manage Faq</title>
+					<sort_order>10</sort_order>
+					<action>micfaq/adminhtml_faqs</action>
+				</micfaq_list>
+				<micfaq_category>
+					<title>Manage Faq Category</title>
+					<sort_order>20</sort_order>
+					<action>micfaq/adminhtml_category</action>
+				</micfaq_category>
+			</children>
+		</micfaq>
+	</menu>
+	
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<micfaq translate="title" module="micfaq">
+						<title>FAQ</title>
+						<sort_order>75</sort_order>
+						<children>
+							<micfaq_list>
+								<title>Manage Faq</title>
+								<sort_order>10</sort_order>
+							</micfaq_list>
+							<micfaq_category>
+								<title>Manage Faq Category</title>
+								<sort_order>20</sort_order>
+							</micfaq_category>
+						</children>
+					</micfaq>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	
+</adminhtml>

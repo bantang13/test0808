@@ -1,0 +1,42 @@
+<?php
+	$faqs = $this->getFaqs();
+?>
+<?php
+	$k=0;
+	foreach($faqs as $faq):
+?>
+	<div style="margin:20px;float:left;width:100%;">
+	<h1><?php echo $faq['name']; ?></h1>
+	<div class="panel-group" id="accordion_<?php echo $k;?>" role="tablist" aria-multiselectable="true"><!--外層-->
+	<?php
+	
+	foreach($faq['data'] as $data):
+	?>
+
+	
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingOne_<?php echo $k;?>">
+			<h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne_<?php echo $k;?>" aria-expanded="false" aria-controls="collapseOne">
+					<?php echo $data['title']; ?>
+				</a>
+			</h4>
+		</div>
+		<div id="collapseOne_<?php echo $k;?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			<div class="panel-body">
+				<?php echo $data['content']; ?>
+			</div>
+		</div>
+	</div>
+	
+	
+	<?php
+		$k=$k+1;
+	endforeach;
+	?>
+	</div>
+	</div>
+<?php
+endforeach;
+?>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Slider</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Slider</summary>
+    <description>Homepage Slider</description>
+    <notes>Top Menu&#xD;
+&#xD;
+Next Update: Footer &amp; RWD</notes>
+    <authors><author><name>Astralweb inc.</name><user>jin</user><email>jin@astralwebinc.com</email></author></authors>
+    <date>2015-08-05</date>
+    <time>03:12:54</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="AYG_Slider.xml" hash="389e393d76cf864acca2a90a156e3b04"/></dir></target><target name="magelocal"><dir name="AYG"><dir name="Slider"><dir name="Block"><dir name="Adminhtml"><dir name="Slide"><dir name="Edit"><file name="Form.php" hash="8463c0710ebeea580f3798b352c6941b"/><dir name="Tab"><file name="Form.php" hash="5c2af5921612d9547f71b382d2cf8629"/></dir><file name="Tabs.php" hash="3f121f67092deab645a0fae2c1b82d02"/></dir><file name="Edit.php" hash="46169934102834bb4f7595563944157c"/><file name="Grid.php" hash="78c23d151840eb589d7a0529130a397d"/></dir><file name="Slide.php" hash="fa0bb496c5e1ad5ab2fd2578b48edf6b"/></dir><file name="Slideshow.php" hash="6807aabdd5cd7ef3c57bfc4c619f0692"/></dir><dir name="Helper"><file name="Data.php" hash="7933c1a11883bd62fdfdceff4d09126c"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Slide"><file name="Collection.php" hash="588397450740773c7e18c837cffb825a"/></dir><file name="Slide.php" hash="815734c9d0be1da9fe5a8926c30a933d"/></dir><file name="Slide.php" hash="25763ac99fcc25e6b25fd46a02ff4dee"/><file name="Status.php" hash="363fe010250913ab57510fd23eba2841"/><dir name="System"><dir name="Config"><file name="Styles.php" hash="8dba719af7c7f0a22431bf570fe9b004"/></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="SlideController.php" hash="55cfead54824f75256adc694f089985c"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="ec3f5fea537c9fd43595d320c146b781"/><file name="config.xml" hash="369cfa2512b1635f71072f4eea2d88ab"/><file name="system.xml" hash="c98f1645778074517e81d03003029ca2"/></dir><dir name="sql"><dir name="slider_setup"><file name="mysql4-install-0.1.0.php" hash="b0f9d534928977bb73d86edc670fd2e4"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="ayg"><file name="slider.xml" hash="002817d1d396e9c3b8571aa90172b3bc"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="ayg"><file name="slider.xml" hash="6c4776d9d2632157164b72ae676a1d45"/></dir></dir><dir name="template"><dir name="ayg"><dir name="slider"><file name="slideshow.phtml" hash="7bf07434e2dc60fc416284cf049e1de5"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

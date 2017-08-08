@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Astralweb_Erp>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Astralweb_Erp>
+    </modules>
+</config>
